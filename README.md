@@ -22,8 +22,9 @@ cd <your-repo-directory>
 ### 2. Create environment
 Set up a virtual environment to manage dependencies
 ```bash
-python -m venv chatbot_env
-source chatbot_env/bin/activate  # On Windows: chatbot_env\Scripts\activate
+python -m venv env
+# On Windows Powershell:
+./env/Scripts/activate
 ```
 
 ### 3. Install packages
@@ -34,18 +35,18 @@ pip install -r requirements.txt
 ### 4. Set environment variables
 ```text
 # TELEGRAM
-TELEGRAM_ACCESS_TOKEN=<Your-Telegram-Access-Token>
-TELEGRAM_BOT_USERNAME=<Your-Telegram-Bot-Username>
+TELEGRAM_ACCESS_TOKEN=<Telegram Access Token>
+TELEGRAM_BOT_USERNAME=<Telegram Bot Username>
 
 # OPENAI
-OPENAI_API_KEY=<Your-OpenAI-API-Key>
-OPENAI_LOCATOR_ID=<OpenAI-Model-ID-for-Locator>
-OPENAI_JOURNALLER_ID=<OpenAI-Model-ID-for-Journaller>
+OPENAI_API_KEY=<Your OpenAI API Key>
+OPENAI_LOCATOR_ID=<OpenAI Model ID for Locator>
+OPENAI_JOURNALLER_ID=<OpenAI Assistant ID for Journaller>
 ```
 
 ### 5. Run chatbot
 ```bash
-python bot.py
+python app.py
 ```
 
 ### Usage
